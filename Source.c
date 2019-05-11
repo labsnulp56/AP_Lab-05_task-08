@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 char* TheLongestWord(char sentence[]);
@@ -7,7 +8,8 @@ void VariabicFunction(int num, char first[], ...);
 int main() {
 	char arr[80];
 	char arr2[40];
-	gets(arr);
+	scanf_s("%s \n", arr, (unsigned)_countof(arr));
+
 	gets(arr2);
 	VariabicFunction(2, arr, arr2);
 
